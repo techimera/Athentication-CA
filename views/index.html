@@ -1,0 +1,50 @@
+<!doctype html>
+<html ng-app="myApp"> 
+    
+<head>
+    <title>User Login and Sessions</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+        
+<body>  
+    <div ng-controller="myController">
+        <h2 id="welcomeText">Welcome. You are Logged In as <br>
+            <%= username %> <br>
+            Here is your personal Information
+        </h2>
+        
+        <p>Edit your personal Information here
+            <p></p>
+        <a id="logoutLink" href="/logout">logout</a>
+        <a id="editLink" href="/user">Edit User</a>
+        
+                
+    </div>
+    <hr>
+    <span id="indexMsg">
+        Server Message: <%= msg %>
+    </span>
+    <hr>
+    <span id="addrTxt">
+        Gender: <%= gen %>
+      </span>
+      <hr>
+      <span id="addrTxt">
+        Age: <%= ag %>
+      </span>
+      <hr>
+      <span id="addrTxt">
+        Email: <%= em %>
+      </span>
+      <hr>
+    <span id="addrTxt">
+        Address: <%= adr %>
+      </span>
+      <hr>
+      
+      
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+</body>
+      
+</html>
